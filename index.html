@@ -1,0 +1,1112 @@
+<html>
+<title>Tugas 13</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>
+    function elemen(karakter) {
+     var i;
+     var x = document.getElementsByClassName("jenis");
+     for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+     }
+     document.getElementById(karakter).style.display = "block";
+    }
+</script>
+<style>
+    .mydiv{
+        display:flex;
+        margin-bottom:7rem;
+    }
+</style>
+<body>
+<div class="w3-card-4">
+<center>
+    <img src="GI.png" width="100%">
+</center>
+</div>
+<div class="w3-bar w3-cyan">
+    <button class="w3-bar-item w3-button" onclick="elemen('about')"><i class="fa fa-user" aria-hidden="true"></i> About Me</button>
+    <div class="w3-dropdown-hover">
+        <button class="w3-button">Pyro</button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <button class="w3-bar-item w3-button" onclick="elemen('Amber')">Amber</button>
+        <button class="w3-bar-item w3-button" onclick="elemen('Bennett')">Bennett</button>
+        <button class="w3-bar-item w3-button" onclick="elemen('Diluc')">Diluc</button>
+        <button class="w3-bar-item w3-button" onclick="elemen('Hu Tao')">Hu Tao</button>
+        <button class="w3-bar-item w3-button" onclick="elemen('Klee')">Klee</button>
+        <button class="w3-bar-item w3-button" onclick="elemen('Thoma')">Thoma</button>
+        <button class="w3-bar-item w3-button" onclick="elemen('Xiangling')">Xiangling</button>
+        <button class="w3-bar-item w3-button" onclick="elemen('Xinyan')">Xinyan</button>
+        <button class="w3-bar-item w3-button" onclick="elemen('Yanfei')">Yanfei</button>
+        <button class="w3-bar-item w3-button" onclick="elemen('Yoimiya')">Yoimiya</button>
+        </div>
+    </div>
+    <div class="w3-dropdown-hover">
+        <button class="w3-button">Cyro</button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <button class="w3-bar-item w3-button" onclick="elemen('Aloy')">Aloy</button>
+        <button class="w3-bar-item w3-button" onclick="elemen('Ayaka')">Kamisato Ayaka</button>
+        <button class="w3-bar-item w3-button" onclick="elemen('Chongyun')">Chongyun</button>
+        <button class="w3-bar-item w3-button" onclick="elemen('Diona')">Diona</button>
+        <button class="w3-bar-item w3-button" onclick="elemen('Eula')">Eula</button>
+        <button class="w3-bar-item w3-button" onclick="elemen('Ganyu')">Ganyu</button>
+        <button class="w3-bar-item w3-button" onclick="elemen('Kaeya')">Kaeya</button>
+        <button class="w3-bar-item w3-button" onclick="elemen('Layla')">Layla</button>
+        <button class="w3-bar-item w3-button" onclick="elemen('Qiqi')">Qiqi</button>
+        <button class="w3-bar-item w3-button" onclick="elemen('Rosaria')">Rosaria</button>
+        <button class="w3-bar-item w3-button" onclick="elemen('Shenhe')">Shenhe</button>
+        </div>
+    </div>
+    <div class="w3-dropdown-hover">
+        <button class="w3-button">Dendro</button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <button class="w3-bar-item w3-button" onclick="elemen('Alhaitham')">Alhaitham</button>
+        <button class="w3-bar-item w3-button" onclick="elemen('Yaoyao')">Yaoyao</button>
+        <button class="w3-bar-item w3-button" onclick="elemen('Collei')">Collei</button>
+        <button class="w3-bar-item w3-button" onclick="elemen('Nahida')">Nahida</button>
+        <button class="w3-bar-item w3-button" onclick="elemen('Tighnari')">Tighnari</button>
+        </div>
+    </div>
+    <div class="w3-dropdown-hover">
+        <button class="w3-button">Anemo</button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <button class="w3-bar-item w3-button" onclick="elemen('Faruzan')">Faruzan</button>
+        <button class="w3-bar-item w3-button" onclick="elemen('Heizou')">Shikanoin Heizou</button>
+        <button class="w3-bar-item w3-button" onclick="elemen('Jean')">Jean</button>
+        <button class="w3-bar-item w3-button" onclick="elemen('Kazuha')">Kaedehara Kazuha</button>
+        <button class="w3-bar-item w3-button" onclick="elemen('Sayu')">Sayu</button>
+        <button class="w3-bar-item w3-button" onclick="elemen('Sucrose')">Sucrose</button>
+        <button class="w3-bar-item w3-button" onclick="elemen('Venti')">Venti</button>
+        <button class="w3-bar-item w3-button" onclick="elemen('Wanderer')">Wanderer</button>
+        <button class="w3-bar-item w3-button" onclick="elemen('Xiao')">Xiao</button>
+        </div>
+    </div>
+    <div class="w3-dropdown-hover">
+        <button class="w3-button">Electro</button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <button class="w3-bar-item w3-button" onclick="elemen('Beidou')">Beidou</button>
+        <button class="w3-bar-item w3-button" onclick="elemen('Cyno')">Cyno</button>
+        <button class="w3-bar-item w3-button" onclick="elemen('Dori')">Dori</button>
+        <button class="w3-bar-item w3-button" onclick="elemen('Fischl')">Fischl</button>
+        <button class="w3-bar-item w3-button" onclick="elemen('Keqing')">Keqing</button>
+        <button class="w3-bar-item w3-button" onclick="elemen('Kuki')">Kuki Shinobu</button>
+        <button class="w3-bar-item w3-button" onclick="elemen('Lisa')">Lisa</button>
+        <button class="w3-bar-item w3-button" onclick="elemen('Ei')">Raiden Shogun</button>
+        <button class="w3-bar-item w3-button" onclick="elemen('Razor')">Razor</button>
+        <button class="w3-bar-item w3-button" onclick="elemen('Sara')">Kujou Sara</button>
+        <button class="w3-bar-item w3-button" onclick="elemen('Yae')">Yae Miko</button>
+        </div>
+    </div>
+    <div class="w3-dropdown-hover">
+        <button class="w3-button">Geo</button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <button class="w3-bar-item w3-button" onclick="elemen('Albedo')">Albedo</button>
+        <button class="w3-bar-item w3-button" onclick="elemen('Gorou')">Gorou</button>
+        <button class="w3-bar-item w3-button" onclick="elemen('Itto')">Arataki Itto</button>
+        <button class="w3-bar-item w3-button" onclick="elemen('Ningguang')">Ningguang</button>
+        <button class="w3-bar-item w3-button" onclick="elemen('Noelle')">Noelle</button>
+        <button class="w3-bar-item w3-button" onclick="elemen('Yun Jin')">Yun Jin</button>
+        <button class="w3-bar-item w3-button" onclick="elemen('Zhongli')">Zhongli</button>
+        </div>
+    </div>
+    <div class="w3-dropdown-hover">
+        <button class="w3-button">Hydro</button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <button class="w3-bar-item w3-button" onclick="elemen('Ayato')">Ayato</button>
+        <button class="w3-bar-item w3-button" onclick="elemen('Barbara')">Barbara</button>
+        <button class="w3-bar-item w3-button" onclick="elemen('Candace')">Candace</button>
+        <button class="w3-bar-item w3-button" onclick="elemen('Childe')">Childe</button>
+        <button class="w3-bar-item w3-button" onclick="elemen('Kokomi')">Sangonomiya Kokomi</button>
+        <button class="w3-bar-item w3-button" onclick="elemen('Mona')">Mona</button>
+        <button class="w3-bar-item w3-button" onclick="elemen('Nilou')">Nilou</button>
+        <button class="w3-bar-item w3-button" onclick="elemen('Xingqiu')">Xingqiu</button>
+        <button class="w3-bar-item w3-button" onclick="elemen('Yelan')">Yelan</button>
+        </div>
+    </div>
+</div>
+<div id="about" class="w3-container jenis w3-animate-zoom" style="display:none">
+    <h2><b> Tentang Saya</b></h2>
+ <hr>
+<center>
+<table style="margin-bottom:20rem;">
+    <tr>
+        <td><h3><b>Nama</b></h3></td>
+        <td><h3><b>: Mochammad Rizky Firdaus</b></h3></td>
+    </tr>
+    <tr>
+        <td><h3><b>Kelas</b></h3></td>
+        <td><h2><b>: IF 1</b></h2></td>
+    </tr>
+    <tr>
+        <td><h3><b>NIM</b></h3></td>
+        <td><h3><b>: 10122007</b></h3></td>
+    </tr>
+</table>
+</center>
+</div>
+<div id="Amber" class="w3-container jenis w3-black w3-animate-top" style="display:none">
+    <div class="mydiv">
+        <div class="amber"><img src="amber.jpg" style="width:90%; margin-top:30px; margin-bottom:30px; padding:30px;"></div>
+        <div class="text">
+            <h1>Personality</h1>
+            <hr>
+            <p>Outrider for the Knights of Favonius, Amber is described as "a model for justice" by Kaeya. She fulfills her duties as an Outrider diligently, even though she's the only one left in the said platoon. She abides by the rules, except for when using her wind glider, having her gliding license revoked numerous times.
+             She has an outgoing personality, as one might find her talking to strangers as if they're acquaintances. She is passionate in everything she does, may it be helping the citizens or purging hilichurls. She wishes to be as great as her grandfather, a once loyal defender of Mondstadt. Even after he disappeared, she still defends Mondstadt in his place.</p>
+            <br>
+            <h1>Appearance</h1>
+            <hr>
+            Amber has long, dark brown hair, gold eyes, and fair skin. She wears a jumper-like outfit composed of dark brown leather shorts, a red hoodie-like top, red stockings, and white thigh-high boots embellished with gold linings and symbols.
+            Amber's accessories include a leather belt with two small bags, and her Pyro Vision attached, gloves, a small belt on her right thigh, and gold-framed goggles. Her most distinguishing feature is the headband with the large red bow that rests on her head, resembling the shape of bunny ears. Additionally, her Vision has two red feathers attached below it. Her outfit, 5-Star Outrider, is described to be an outrider's uniform made for maximum mobility. 
+            </div>
+        </div>
+</div>
+<div id="Bennett" class="w3-container jenis w3-black w3-animate-top" style="display:none">
+    <div class="mydiv">
+        <div class="bennett"><img src="bennett.jpg" style="width:100%; margin-top:30px; margin-bottom:30px; padding:30px;"></div>
+        <div class="text">
+            <h1>Personality</h1>
+            <hr>
+            <p>Bennett has had more than his fair share of hardships thanks to his extraordinarily bad luck, yet he continues to be a strong and hardworking member of the Adventurers' Guild. He is optimistic, well-behaved, and full of passion for adventuring. Despite the long and excruciating stretches of bad luck he encounters, he is also inventive, having created different solutions for the problems he faces while adventuring.
+            Bennett believes his Vision is a sign from the gods: a sign that they have not given up on him, just like how the old and or retired veteran adventurers from the Guild — whom he affectionately refers to as "dads" — have not given up on him either.
+            <br>
+            <h1>Appearance</h1>
+            <hr>
+            Bennett uses the medium male model. He has pale ash-grey hair, light tan skin, and bright green eyes. It seems that he keeps getting scarred from his various misadventures and categorically terrible luck. He has a prominent scar on his left shoulder.
+            </div>
+        </div>
+</div>
+<div id="Diluc" class="w3-container jenis w3-black w3-animate-top" style="display:none">
+    <div class="mydiv">
+        <div class="diluc"><img src="diluc.jpg" style="width:100%; margin-top:30px; margin-bottom:30px; padding:30px;"></div>
+        <div class="text">
+            <h1>Personality</h1>
+            <hr>
+            <p>Kaeya calls himself and Diluc "anti-heroes with attitude problems". He decided to take matters into his own hands by becoming, to his dismay and embarrassment, the "Darknight Hero" to protect Mondstadt's people.
+            Diluc was once an ideal young man, dedicated to his work with Knights of Favonius. After his father's untimely demise as a result of using a Delusion, along with Inspector Eroch ordering Diluc to cover up the incident, his faith in the Knights shattered and he left the organization. 
+            <br>
+            <h1>Appearance</h1>
+            <hr>
+            Diluc is a tall and slender man with pale skin, red eyes, and bright red hair, worn in a low ponytail that extends to his mid-back. His expression usually makes him appear stern, exasperated, or unimpressed.
+            Diluc wears a black dress shirt, a long white vest, and a black ascot with a red gem. Over this he dons a dark brown coat. He wears black pants which are embellished with chains on his right thigh, while his Vision is attached to a belt. Diluc also wears cuffed, dark brown boots and a pair of black gloves which he has a habit of adjusting.
+            His default outfit, Darknight Blaze, is described to be a smart and tasteful suit fit for a nobleman.
+            </div>
+        </div>
+</div>
+<div id="Hu Tao" class="w3-container jenis w3-black w3-animate-top" style="display:none">
+    <div class="mydiv">
+        <div class="hutao"><img src="hutao.jpg" style="width:100%; margin-top:30px; margin-bottom:30px; padding:30px;"></div>
+        <div class="text">
+            <h1>Personality</h1>
+            <hr>
+            <p>At first glance, Hu Tao appears to be a quirky and cheerful girl. She enjoys pranking people and despises sitting around and doing nothing, as she wishes to live her life to the fullest. Her eccentric and off-the-wall personality often leaves people with a negative impression of her, especially Qiqi, who states that she has a "punchable face" and should be stored in the fridge. In contrast, Xiao enjoys her sense of humor, finding it irritating but interesting.
+             On the other hand, when handling funerals and last rites, she becomes more solemn and constantly reminds her employees to never deviate from the client's requests. Due to the importance and traditions of the parlor's duties, she expresses a distaste towards people treating her or her employees with suspicion whenever they go to work at night.
+            <br>
+            <h1>Appearance</h1>
+            <hr>
+            Hu Tao uses the medium female model. She has a fair complexion; bright scarlet eyes with white, blossom-shaped pupils; faded red makeup painted at the corners of her eyes; and long dark brown hair fading to crimson at the tips.
+            </div>
+        </div>
+</div>
+<div id="Klee" class="w3-container jenis w3-black w3-animate-top" style="display:none">
+    <div class="mydiv">
+        <div class="klee"><img src="klee.jpg" style="width:100%; margin-top:30px; margin-bottom:30px; padding:30px;"></div>
+        <div class="text">
+            <h1>Personality</h1>
+            <hr>
+            <p>Klee is an energetic and outgoing girl who takes after her mother, Alice. She has a particular talent for creating explosives and is not fazed by the sound of explosions. She adores anything that can blow up like her bombs, such as Amber's Baron Bunny. She acts like a typical energetic young child who loves playing with her friends. Unfortunately, her definition of playing usually involves explosives; she is particularly fond of "fish blasting", tossing bombs into lakes full of fish.
+            In part due to her young age, Klee can be very naïve at times and easily confused by topics she doesn't have any context for, such as mistaking Mondstadt's wine industry for a monster, and wondering why Diluc is always grumpy, even going as far as to call him the "weird grown-up".
+            <br>
+            <h1>Appearance</h1>
+            <hr>
+            Klee uses the short female model. She has pale skin, light red eyes, pale blonde hair with a prominent cowlick, and elf ears.
+            </div>
+        </div>
+</div>
+<div id="Thoma" class="w3-container jenis w3-black w3-animate-top" style="display:none">
+    <div class="mydiv">
+        <div class="thoma"><img src="thoma.jpg" style="width:100%; margin-top:30px; margin-bottom:30px; padding:30px;"></div>
+        <div class="text">
+            <h1>Personality</h1>
+            <hr>
+            <p>Thoma is known by Inazumans to be a "helper" — helping everyone out and ensuring that any issues are quickly and peacefully resolved.
+                The son of an Inazuman father and Mondstadter mother, Thoma shares the traits seen in both nations' peoples; his father placed a great emphasis on loyalty, while being raised in Mondstadt meant that he could easily mingle with most people. He believes that people should happily enjoy a leisurely life and does not particularly care about his reputation, even if people speak ill of him. He originally went to Inazuma to bring his father Dandelion Wine, but after falling overboard, he ended up in Inazuma with no connections and no Mora. Despite the dangers he faced at the time, Thoma was able to make the most of his situation and eventually obtained the Kamisato Clan's trust. He is an efficient worker, resolving all of the Kamisato Clan's issues in a timely order.
+            <br>
+            <h1>Appearance</h1>
+            <hr>
+            Thoma uses the tall male model. He has green eyes, fair skin, and messy blond hair that is short except for a section at the back of his head that goes down to his shoulders.
+            </p>
+        </div>
+    </div>
+</div>
+<div id="Xiangling" class="w3-container jenis w3-black w3-animate-top" style="display:none">
+    <div class="mydiv">
+        <div class="xiangling"><img src="xiangling.jpg" style="width:100%; margin-top:30px; margin-bottom:30px; padding:30px;"></div>
+        <div class="text">
+            <h1>Personality</h1>
+            <hr>
+            <p>Xiangling loves cooking, having learned the art from her father. She does not have a discerning eye towards a specific type of cuisine, seeing that food is a way to expand and experiment. She will use anything for her recipes, even unconventional ingredients that would gross out others. Some of the bizarre ingredients that Xiangling uses are slimes and lizards. Even if some of the dishes are not to her liking, Xiangling will not give up and simply press on to modify or start over from scratch.
+                Her unconventional cooking is what led her to acclaim in both Mondstadt and Liyue. Unlike most cooks, Xiangling is not concerned about mora, stating that food is to nourish and that the smiles on her customers' faces is more than enough for her. She dislikes having to limit herself to a specific style of cooking, seeing it as bland and unsurprising.
+                Outside of cooking, Xiangling is easy to scare and is often pranked by Hu Tao.Despite disliking her pranks, Xiangling does not have a grudge towards her because she occasionally brings her gifts in return for giving her a good laugh.
+            <br>
+            <h1>Appearance</h1>
+            <hr>
+            Xiangling uses the medium female model. She has black hair cut in a bob-like fashion at the front and of unknown length at the back, golden eyes, and a pale complexion.
+            </p>
+        </div>
+    </div>
+</div>
+<div id="Xinyan" class="w3-container jenis w3-black w3-animate-top" style="display:none">
+    <div class="mydiv">
+        <div class="xinyan"><img src="xinyan.jpg" style="width:100%; margin-top:30px; margin-bottom:30px; padding:30px;"></div>
+        <div class="text">
+            <h1>Personality</h1>
+            <hr>
+            <p>Xinyan is a fan of rock 'n' roll and returned to Liyue to spread it across the nation. Despite having difficulty in improving its reputation for many reasons, she is not discouraged and continues to play, appreciating all who come to her performances. She does not have any formal training for her music, having learned it herself on the go. As such, she is very supportive of others who show interest, even if they have no experience.
+                Having a fiery personality, she likes standing out in her own way, but many consider her to be weird and/or terrifying as a result. While aware of this, her attempts to make herself more presentable to them ends up in failure.
+            <br>
+            <h1>Appearance</h1>
+            <hr>
+            Xinyan uses the medium female model. She has dark skin, amber eyes, and shoulder-length dark brown hair with dark red streaks and some orange undersides.
+            Xinyan owns a white, brown, and red square ruan with an axe-like bottom.
+            </p>
+        </div>
+    </div>
+</div>
+<div id="Yanfei" class="w3-container jenis w3-black w3-animate-top" style="display:none">
+    <div class="mydiv">
+        <div class="yanfei"><img src="yanfei.jpg" style="width:100%; margin-top:30px; margin-bottom:30px; padding:30px;"></div>
+        <div class="text">
+            <h1>Personality</h1>
+            <hr>
+            <p>Yanfei enjoys appraisal, reading and is very knowledgeable on many topics — most notably the law, due to her career as a legal advisor. With a strong sense of justice, Yanfei does not mind traveling to help her clients should they have trouble in different parts of Liyue. She claims to have extensive knowledge of the laws of the other nations in Teyvat — though, she notes Fontaine's law to be the most difficult. She is well known by the people of Liyue for her knowledge and is considered the premier legal advisor of Liyue, a title that garners her many a client across the nation. Even Ningguang, the Tianquan of the Liyue Qixing, states that Yanfei's memorization of the law allows her to quickly close loopholes in existing laws faster than she would have been able to herself. When resolving disputes, Yanfei always gets all legal evidence beforehand to make a compelling and convincing argument.
+            <br>
+            <h1>Appearance</h1>
+            <hr>
+            Yanfei uses the medium female model. She has a pale complexion, bright teal-green eyes with ovoid pupils, and salmon pink hair that goes past her shoulders and fades to a pale peach at the tips. The hair around the sides of her head is chopped short at ear length in a fringe, revealing a pair of cream colored antlers as a result of her xiezhi heritage. In addition to this, the sides of her chest, ankles, and the backs of her hands have white diamond-shaped markings that resemble scales.
+            </p>
+        </div>
+    </div>
+</div>
+<div id="Yoimiya" class="w3-container jenis w3-black w3-animate-top" style="display:none">
+    <div class="mydiv">
+        <div class="yoimiya"><img src="yoimiya.jpg" style="width:100%; margin-top:30px; margin-bottom:30px; padding:30px;"></div>
+        <div class="text">
+            <h1>Personality</h1>
+            <hr>
+            <p>Yoimiya, like the rest of her family, is loved by the people of Inazuma City for the fireworks she creates. She is also loved by children due to her friendly hands-on approach with them, as she wishes to keep them happy so they don't have to deal with the harsh realities of Inazuma for the time being. Having very few worries of her own, she can also read peoples' hearts and can tell whether or not they're hiding something deep down.
+            Like her father, Yoimiya is devoted to the family business, stating that her customers' happiness is the first priority above all else. This service has amassed a massive and loyal customer base who are willing to help her out on any problems she have. She is somewhat of a fast speaker, and despite being the primary provider of fireworks, is also known to be quite reckless and unprepared, having been scolded by the city's fire brigade numerous times and noted by Amenoma Tougo to always make last-minute preparations.
+            <br>
+            <h1>Appearance</h1>
+            <hr>
+            Yoimiya uses the medium female model. She has a fair complexion, golden eyes with orange-red makeup painted at the corners, and shoulder-length light strawberry blonde hair. There is a small flower tattoo near her left shoulder and another similar tattoo patch around her upper left arm containing a red fish, flowers, and purple swirls.
+            </p>
+        </div>
+    </div>
+</div>
+<div id="Aloy" class="w3-container jenis w3-black w3-animate-left" style="display:none">
+    <div class="mydiv">
+        <div class="aloy"><img src="aloy.jpg" style="width:100%; margin-top:30px; margin-bottom:30px; padding:30px;"></div>
+        <div class="text">
+            <h1>Personality</h1>
+            <hr>
+            <p>An outcast since birth, Aloy grew up in a harsh mountain wilderness near the tribe that shunned her. Fostered by an expert hunter, she trained to hunt with cat-like grace and deadly accuracy – but the things she most wanted to learn, he could not teach her. Most of all, she burned to know the circumstances of her birth – who her parents were, and why she was shunned by the tribe.
+                Her quest for answers swept her into a wider and more dangerous world than she ever could have imagined. She encountered strange and powerful new tribes, ancient ruins rife with mysteries, and dangerous enemies, both human and machine.Eventually she learned that her origins and destiny were deeply tied to the fate of the world itself, and fought an epic battle to save it against the evil forces of an artificial intelligence from the ancient past.
+                She thought that this would be the end of her journey. But there is always more to an adventurer's tale. She has now come to Teyvat in search of a new challenges.
+                In this brave new world, Aloy is ready for the hunt!
+            <br>
+            <h1>Appearance</h1>
+            <hr>
+            Aloy uses the medium female model. She has pale, freckled skin; light green-brown eyes; and long, light auburn-brown hair, some of which is tied into braids.
+            </p>
+        </div>
+    </div>
+</div>
+<div id="Ayaka" class="w3-container jenis w3-black w3-animate-left" style="display:none">
+    <div class="mydiv">
+        <div class="ayaka"><img src="ayaka.jpg" style="width:100%; margin-top:30px; margin-bottom:30px; padding:30px;"></div>
+        <div class="text">
+            <h1>Personality</h1>
+            <hr>
+            <p>Ayaka is a kind-hearted girl with a pleasant temperament who treats others with politeness and courtesy. She holds the people of Inazuma dear to her heart and often goes out of her way to personally assist in all kinds of matters; being a member of the Yashiro Commission, she feels that she must meet the people's needs. She is a perfectionist with an earnest personality. Her dedication often moves people, and those close to her gave her the honorary title of Shirasagi Himegimi (Japanese: 白しら鷺さぎの 姫ひめ君ぎみ Shirasagi no Himegimi, "White Heron Princess"). People in the neighborhood always talk about her with sincere admiration.
+            <br>
+            <h1>Appearance</h1>
+            <hr>
+            Ayaka is a young woman of slightly below average height. She keeps her long, pale white-blue hair tied in a high ponytail by a black armored headdress accented with gold. Her hair is styled in a hime cut, with evenly chopped locks framing her face tied off with white accessories bordered with gold, fastened with bright pink cords tied in cloverleaf knots. Her light blue-gray eyes are accompanied by thick lashes and a mole underneath her left eye.
+            </p>
+        </div>
+    </div>
+</div>
+<div id="Chongyun" class="w3-container jenis w3-black w3-animate-left" style="display:none">
+    <div class="mydiv">
+        <div class="chongyun"><img src="chongyun.jpg" style="width:100%; margin-top:30px; margin-bottom:30px; padding:30px;"></div>
+        <div class="text">
+            <h1>Personality</h1>
+            <hr>
+            <p>The young exorcist from Liyue, Chongyun. One might find Chongyun as a composed and stoic individual, though his friends might not say it is true most of the time.
+                Chongyun is a positive individual quite literally, as he has an excess of positive energy in him. Due to this excess in positive energy, he's vulnerable to things that warms him — fiery events, food, drinks, clothing, the sun, and even blushing. In the event he is not able to suppress those feelings, he might enter a manic state of being excited, friendly or faint. In extreme cases, he may show extreme signs of irrationality. To counter said positive energy, he always wears light-colored and light-weight clothing and usually eats cold food, though even with these methods and despite his efforts, he still has issues overcoming his unusual constitution.
+            <br>
+            <h1>Appearance</h1>
+            <hr>
+            Chongyun uses the medium male model. He has light blue hair reaching his ears, pale skin, and ice-blue cat slit eyes.
+            </p>
+        </div>
+    </div>
+</div>
+<div id="Diona" class="w3-container jenis w3-black w3-animate-left" style="display:none">
+    <div class="mydiv">
+        <div class="diona"><img src="diona.jpg" style="width:100%; margin-top:30px; margin-bottom:30px; padding:30px;"></div>
+        <div class="text">
+            <h1>Personality</h1>
+            <hr>
+            <p>According to her father Draff, Diona is in a bit of a rebellious phase. While Diona adores her father and idolized him in her youth, witnessing his change in personality while drunk shattered the pedestal she put him on — and started her vendetta against alcohol. She despises just about anyone who indulges in alcohol, apart from Lisa[2] and Eula.[3]
+                Although Diona has the option of literally destroying the industry,[4] she chose not to, instead opting to do so by plummeting the industry's reputation by becoming a bartender and serving terrible drinks. Unfortunately for her, her long-forgotten childhood friend, the Spring Fairy, blessed her with a magic touch that makes all of her drinks delicious, regardless of how noxious the ingredients used are, and she herself is unaware of this.
+            <br>
+            <h1>Appearance</h1>
+            <hr>
+            Diona uses the short female model. She has fair skin, short pink hair, teal green eyes, and round eyebrows. Diona's cat ears and tail appear to be those of a calico cat.
+            </p>
+        </div>
+    </div>
+</div>
+<div id="Eula" class="w3-container jenis w3-black w3-animate-left" style="display:none">
+    <div class="mydiv">
+        <div class="eula"><img src="eula.jpg" style="width:100%; margin-top:30px; margin-bottom:30px; padding:30px;"></div>
+        <div class="text">
+            <h1>Personality</h1>
+            <hr>
+            <p>Eula is a descendant of Mondstadt's old aristocracy, being from the now-overthrown Lawrence Clan infamous for their tyrannical rule over Mondstadt. She dislikes people who view her similarly to the rest of her clan due to this mistrust, which has not been forgotten. She has a habit of declaring and getting "vengeance" against her enemies to redeem her family name. She is one of the few Lawrence Clan nobles who realize that their actions against the people of Mondstadt were unjustified, rather than the other way around. As a young child, she was forced by her family to learn noble etiquette as part of an educational regime so harsh that it is considered borderline abusive.
+            <br>
+            <h1>Appearance</h1>
+            <hr>
+            Eula uses the tall female model. She has a pale complexion and eyes that appear to exhibit sectoral heterochromia, fading from dark purple to pale yellow. She has choppy, unevenly cut light blue hair.
+            </p>
+        </div>
+    </div>
+</div>
+<div id="Ganyu" class="w3-container jenis w3-black w3-animate-left" style="display:none">
+    <div class="mydiv">
+        <div class="ganyu"><img src="ganyu.jpg" style="width:100%; margin-top:30px; margin-bottom:30px; padding:30px;"></div>
+        <div class="text">
+            <h1>Personality</h1>
+            <hr>
+            <p>Ganyu is usually very quiet and reserved due to her half-qilin heritage. She also completes whatever is given to her, whether it be tasks or food, even if she is reluctant to do so. Privately, she tends to snap whenever people speak ill of Beidou or the Geo Archon.
+                Ganyu has served as the non-stopping secretary of the Liyue Qixing for thousands of years. The more important the task is, the more effort she puts into it, but she also becomes increasingly nervous and is more prone to making mistakes.
+            <br>
+            <h1>Appearance</h1>
+            <hr>
+            Ganyu uses the medium female model. She has fair skin and pale blue hair that naturally bunches in the middle and fades into a darker shade at the ends. She has black-red horns that bend back along her hair, similar to how a goat's horns look, with brighter red markings on them. She has eyes that appear to exhibit sectoral heterochromia, fading from purple at the top to pinkish-gold at the bottom.
+            </p>
+        </div>
+    </div>
+</div>
+<div id="Kaeya" class="w3-container jenis w3-black w3-animate-left" style="display:none">
+    <div class="mydiv">
+        <div class="kaeya"><img src="kaeya.jpg" style="width:100%; margin-top:30px; margin-bottom:30px; padding:30px;"></div>
+        <div class="text">
+            <h1>Personality</h1>
+            <hr>
+            <p>Kaeya is an outwardly confident and charming individual with a flair for drama. He is sometimes seen as overly laid-back and even lazy, but he takes his work seriously. He is surprisingly popular among the elderly of Mondstadt, even earning himself the title of "top candidate for grandson-in-law." His charisma and determination have earned him the admiration, respect, and favor of many people in Mondstadt — yet, his love for provoking others has also gained him the exasperation of those same people. Kaeya also enjoys putting people into high-stress situations and challenging their values, which he does to both his enemies and his allies alike. He takes pleasure in seeing the hesitation in his comrades' eyes at the moment just before they dive into battle with him, just as he takes pleasure in the look of fear in his enemies' eyes as they face off against him.
+            <br>
+            <h1>Appearance</h1>
+            <hr>
+            Kaeya uses the tall male model. He has a tanned complexion and navy-blue hair with streaks of lighter blue, accompanied by a waist-length lock of hair that begins at the base of his scalp on the back of his head at the left. His visible eye is periwinkle with a diamond-shaped pupil that is shared with other characters known to be from Khaenri'ah. Over his right eye, he wears a gold-trimmed black eyepatch that is mostly covered by his bangs. Kaeya has not been seen without his eyepatch, but his right eye, which is functional, is implied to have a scar over it due to being wounded by Diluc during their battle after Crepus' death.
+            </p>
+        </div>
+    </div>
+</div>
+<div id="Layla" class="w3-container jenis w3-black w3-animate-left" style="display:none">
+    <div class="mydiv">
+        <div class="layla"><img src="layla.jpg" style="width:100%; margin-top:30px; margin-bottom:30px; padding:30px;"></div>
+        <div class="text">
+            <h1>Personality</h1>
+            <hr>
+            <p>Due to in part of the Akademiya lifestyle, Layla is highly devoted to her studies, but this has also left her somewhat paranoid and highly sleep deprived, making her very timid and looking like she could collapse from exhaustion at any point. Despite these traits, Layla is unusually perseverant, having outlasted several of her classmates who had joined at the same time as her.
+            Layla's lack of sleep is to the point that she ends up sleepwalking in the night, where an alternate personality manifests from her. This persona is energetic and determined, helping solve all of her problems (who dubs the present Layla as "Daytime") in an instant. When Layla wakes up, she expresses surprise as to how her papers had been completely finished. She appears to be unaware of her alternate persona, instead believing that she's blessed by the stars.
+            <br>
+            <h1>Appearance</h1>
+            <hr>
+            Layla uses the medium female model. She has fair skin, golden eyes with white pupils, dark blue hair that fades to a lighter shade at the tips, and pointed ears.
+            </p>
+        </div>
+    </div>
+</div>
+<div id="Qiqi" class="w3-container jenis w3-black w3-animate-left" style="display:none">
+    <div class="mydiv">
+        <div class="qiqi"><img src="qiqi.jpg" style="width:100%; margin-top:30px; margin-bottom:30px; padding:30px;"></div>
+        <div class="text">
+            <h1>Personality</h1>
+            <hr>
+            <p>Qiqi has a quiet yet polite demeanor when dealing with customers at the pharmacy. As a zombie, Qiqi has trouble retaining memories and can quickly forget about people if she doesn't continually reinforce herself with an impression of them, using her Vision to protect those she holds dear. Due to her undead nature, Qiqi has a relatively dull tone of voice and cannot convey most of her emotions to others, nor does she have a sense of smell. She prefers cold weather, as the heat reminds her of death, and her flesh begins to decay if she stays too long in such places.
+            <br>
+            <h1>Appearance</h1>
+            <hr>
+            Qiqi uses the short female model. She has pale skin, magenta-colored eyes, and light purple hair that is chin-length except for a section at the back of her head that goes down past her hips.
+            Despite being a zombie, Qiqi claims to be in better shape than her boss, Baizhu. She performs calisthenics daily to prevent rigor mortis from setting in, which would otherwise force her to continually hop around to move.
+            </p>
+        </div>
+    </div>
+</div>
+<div id="Rosaria" class="w3-container jenis w3-black w3-animate-left" style="display:none">
+    <div class="mydiv">
+        <div class="rosaria"><img src="rosaria.jpg" style="width:100%; margin-top:30px; margin-bottom:30px; padding:30px;"></div>
+        <div class="text">
+            <h1>Personality</h1>
+            <hr>
+            <p>Rosaria is a somewhat intimidating woman who has a rather unorthodox idea of piety. Kaeya describes her as someone who is "honest with herself". She dislikes topics that bore her and having to work overtime. Fischl overheard her cursing out someone in Barbatos' name and takes it as a sign of Rosaria's piety, an interpretation Oz doubts. Like Fischl, her intuition is very keen, as she's well aware that Diluc, Kaeya, Venti and Albedo are more than what they appear to be.
+            <br>
+            <h1>Appearance</h1>
+            <hr>
+            Rosaria is a tall adult female with ghostly pale grey skin. She has choppy wine-colored hair cut short in the back, with some strands of her bangs colored a darker red. Rosaria has pale magenta eyes with cat-like light pink irises, and noticeable bags under her eyes. She almost always has a serious expression on her face.
+            Rosaria wears a form-fitting nun's habit consisting of a long white and black coif with red lining, a white sleeveless turtleneck top, long white gloves, and a long black and red slit skirt that partially reveals her right leg and completely reveals her left. She wears black belts around her left thigh, along with black fishnet tights and silver high-heels.
+            </p>
+        </div>
+    </div>
+</div>
+<div id="Shenhe" class="w3-container jenis w3-black w3-animate-left" style="display:none">
+    <div class="mydiv">
+        <div class="shenhe"><img src="shenhe.jpg" style="width:100%; margin-top:30px; margin-bottom:30px; padding:30px;"></div>
+        <div class="text">
+            <h1>Personality</h1>
+            <hr>
+            <p>Originally part of an exorcist clan, Shenhe originally had a happy life as a child until her father attempted to sacrifice her to a malevolent god in order to bring back his wife. While Shenhe managed to defeat the remnants of the god herself, the incident scarred her for life, believing herself to be a "cursed" child and began growing a homicidal tendency. Despite the adepti's attempts to contain it, they have only done so by binding her soul with Red Ropes, which has also caused her to become mostly indifferent.Even with the red ropes suppressing her homicidial tendencies, Shenhe often contemplates the most violent means to eliminate others and is almost always easy to anger, obliterating her surroundings whenever her emotions get the best of her. She throws hostile looks at Xingqiu, believing him to be threatening others.Despite this, Shenhe ultimately wishes to fit in human society and places great trust in the Traveler. She prefers speaking with a small numbers of people at a time.
+            <br>
+            <h1>Appearance</h1>
+            <hr>
+            Shenhe uses the tall female model. She has a fair complexion, long hair that turns from silvery white at the roots to inky black at the ends, and pale, iridescent eyes with white pupils.
+            </p>
+        </div>
+    </div>
+</div>
+<div id="Alhaitham" class="w3-container jenis w3-black w3-animate-right" style="display:none">
+    <div class="mydiv">
+        <div class="alhaitham"><img src="alhaitham.jpg" style="width:100%; margin-top:30px; margin-bottom:30px; padding:30px;"></div>
+        <div class="text">
+            <h1>Personality</h1>
+            <hr>
+            <p>Alhaitham is only interested in studying whatever interests him, having forgone ownership of a supposed Divine Knowledge Capsule to simply study it. He is also not fond of leading from the front, instead opting to help in the back.
+            He operates purely by rationality, causing many people to consider his actions unacceptable. This is most notable with his housemate Kaveh, as the two frequently clash over their perspectives, even bleeding into message boards across Sumeru City and Port Ormos.
+            <br>
+            <h1>Appearance</h1>
+            <hr>
+            Alhaitham is a tall, well-built man with gray hair with pale turquoise highlights. His irises are a light turquoise with orange pupils. He dons orange eyeshadow and wears a large gold earpiece with green details. Alhaitham's outfit consists of a dark half-off coat-like garment with a green front and lapels. The coat's color fades from dark green to black and has numerous golden details and numerous trinkets, as well as a black mini cape with a golden underside. He sports a tight black top with a split high collar and detached sleeves, also decorated with golden details and a green ornament on his chest. His arm sleeves partially cover his hands, leaving certain fingers exposed. 
+            </p>
+        </div>
+    </div>
+</div>
+<div id="Yaoyao" class="w3-container jenis w3-black w3-animate-right" style="display:none">
+    <div class="mydiv">
+        <div class="yaoyao"><img src="yaoyao.jpg" style="width:100%; margin-top:30px; margin-bottom:30px; padding:30px;"></div>
+        <div class="text">
+            <h1>Personality</h1>
+            <hr>
+            <p>Whenever The Crux stocks up at Liyue Harbor, she often goes on board to play with them until they set sail. However, this has also caused problems as someone in the Ministry of Civil Affairs tasked Ganyu with trying to ensure she doesn't sneak onto their ship. She also has taken a liking to seafood, neglecting fruits and vegetables in her diet.'
+            <br>
+            <h1>Appearance</h1>
+            <hr>
+            Yaoyao is a fair-skinned girl with pale dark red eyes and short braided golden brown hair tied into a bow at the top. Her face is evenly framed by a set of neat bangs, with a pair of gold flower-shaped hairpins. Her hair is tied into two small buns, held together with a set of oversized golden jingle bells.
+            Yaoyao wears a yellow green overcoat with puffed up sleeves secured around the wrists with orange bows. She wears this over a dark brown collared tunic and belt and short pleated skirt with ruffles decorated with golden flowers. She has a large orange pouch with a large tassel around her waist just above her skirt, decorated with an emblem resembling that of a flower. Yaoyao wears a pair of white bloomers and a dark suit underneath, along with a pair of orange-toed white boots. Yaoyao is typically seen carrying an oversized basket over her shoulder which is where her Dendro Vision is pinned to a red bow knot
+            </p>
+        </div>
+    </div>
+</div>
+<div id="Collei" class="w3-container jenis w3-black w3-animate-right" style="display:none">
+    <div class="mydiv">
+        <div class="collei"><img src="collei.jpg" style="width:100%; margin-top:30px; margin-bottom:30px; padding:30px;"></div>
+        <div class="text">
+            <h1>Personality</h1>
+            <hr>
+            <p>When Collei first arrives in Mondstadt, due to her past experiences, she is extremely wary and suspicious of people, preferring to be left alone and making her seem cold. Her pessimistic view of the world comes from the mistreatment and abuse she endured everywhere. She also has a rather low opinion of herself, pushing people away because she is "unclean" and says she is unworthy of their time.
+                She was initially annoyed by Amber because of her cheerful and optimistic personality, but Amber shows her kindness by offering to help her find that something she lost, even insisting they are friends and protecting her from Kaeya's intimidation multiple times. The two continue to grow closer during the course of the manga and Collei begins to trust Amber, becoming less wary of people as her view of the world becomes brighter.
+            <br>
+            <h1>Appearance</h1>
+            <hr>
+            Collei uses the medium female model. She has short, wavy light green hair that reaches her shoulders and purple, almost magenta eyes.
+            </p>
+        </div>
+    </div>
+</div>
+<div id="Nahida" class="w3-container jenis w3-black w3-animate-right" style="display:none">
+    <div class="mydiv">
+        <div class="nahida"><img src="nahida.jpg" style="width:100%; margin-top:30px; margin-bottom:30px; padding:30px;"></div>
+        <div class="text">
+            <h1>Personality</h1>
+            <hr>
+            <p>When the Traveler and Paimon first meet Nahida in the Sabzeruz Festival samsara, she was an elusive and secretive individual. She voluntarily left ruling the city to the sages, though like in cases with the samsara, she would intervene as best she could if they stepped out of line. She also suffered from very low self-esteem as a result of the way the sages treated her. However after the downfall of the sages and the cleansing of Irminsul, many of these traits have minimized or vanished. She now openly wanders around the city, when she has time, and interacts with her people and has an overall far more genuinely cheerful view of herself.
+            <br>
+            <h1>Appearance</h1>
+            <hr>
+            Nahida uses the short female model. She has fair skin, pointed ears, large green eyes, and white hair with Dendro-green tips that glow when she uses her Elemental Skill or her Elemental Burst.
+            </p>
+        </div>
+    </div>
+</div>
+<div id="Tighnari" class="w3-container jenis w3-black w3-animate-right" style="display:none">
+    <div class="mydiv">
+        <div class="tighnari"><img src="tighnari.jpg" style="width:100%; margin-top:30px; margin-bottom:30px; padding:30px;"></div>
+        <div class="text">
+            <h1>Personality</h1>
+            <hr>
+            <p>Being a Forest Watcher, Tighnari is highly knowledgeable about various species of both plants and animals, particularly flowers. He spends a great deal of time in Sumeru's rainforests, ensuring that the ecosystem is balanced and offers advice to those willing to listen and sternly lectures those who don't. He has very sensitive ears, not being very fond of thunder or wind since they greatly affect them. He is also not fond of the desert, having suffered from heatstroke and thus claims that it's too hot for him.
+                He serves as a mentor to Collei, who in turn sees him as a Master of some sorts and holds him with high regard.
+            <br>
+            <h1>Appearance</h1>
+            <hr>
+            Tighnari uses the medium male model. He has fair skin, chin-length dark green hair with black roots and light green streaks at the front, and pale-pupiled eyes that fade from brown to green. He also possesses large, pointy black ears and a fluffy tail in two shades of dark green.
+            </p>
+        </div>
+    </div>
+</div>
+<div id="Faruzan" class="w3-container jenis w3-black w3-animate-bottom" style="display:none">
+    <div class="mydiv">
+        <div class="faruzan"><img src="faruzan.jpg" style="width:100%; margin-top:30px; margin-bottom:30px; padding:30px;"></div>
+        <div class="text">
+            <h1>Personality</h1>
+            <hr>
+            <p>Despite being a Haravatat scholar, Faruzan specializes more in the Kshahrewar studies, being highly knowledgeable in machine mechanics and language. She's highly respected in the Kshahrewar school for her contributions, but she still remains a Haravatat scholar and refuses any attempts to join Kshahrewar. Due to technically living longer than others in part due to the King Deshret ruins she had been trapped in, she self-identifies as a senior despite her youthful appearance and demands respect from them. However, she struggles to get it in part due to many of her peers seeing her thesis and points being outdated.
+            <br>
+            <h1>Appearance</h1>
+            <hr>
+            Faruzan uses the medium female model. She has fair skin, and her hair is a teal gradient, from pale teal at the roots to a darker teal at the ends. She has messy bangs that frame the sides of her face, and her hair is cut short except for two locks of hair that mimic twin tails. Her eyes are a pale shade of blue and are partially golden, and her pupils are triangle-shaped.
+            </p>
+        </div>
+    </div>
+</div>
+<div id="Heizou" class="w3-container jenis w3-black w3-animate-bottom" style="display:none">
+    <div class="mydiv">
+        <div class="heizou"><img src="heizou.jpg" style="width:100%; margin-top:30px; margin-bottom:30px; padding:30px;"></div>
+        <div class="text">
+            <h1>Personality</h1>
+            <hr>
+            <p>In Heizou's youth, he was rebellious and disliked following rules.Despite calling himself a detective and serving the Tenryou Commission, his investigations revolve around his personal principles and appear to be unrelated to any governmental duty. Heizou's view of the term "detective" mostly stems from his belief that one should be evil's natural enemy, as the damage had already been done despite any attempt to cover it. This caused him to split with Sango. Despite appearing "brainy" to many, Heizou is one of the Tenryou Commission's strongest doushins, using his intuition to solve cases and stop criminals in their tracks. He is also capable of subduing them in melee combat, but he tries to avoid this whenever possible as he sees it as blunt.
+            <br>
+            <h1>Appearance</h1>
+            <hr>
+            Heizou uses the medium male model. He has burgundy hair with a dark highlight, light olive green eyes, and a mole below each eye.
+            </p>
+        </div>
+    </div>
+</div>
+<div id="Jean" class="w3-container jenis w3-black w3-animate-bottom" style="display:none">
+    <div class="mydiv">
+        <div class="jean"><img src="jean.jpg" style="width:100%; margin-top:30px; margin-bottom:30px; padding:30px;"></div>
+        <div class="text">
+            <h1>Personality</h1>
+            <hr>
+            <p>As the acting Grand Master for the Knights, Jean takes all of her responsibilities and duties associated with the role seriously, regardless of how minor the tasks may seem, such as finding a lost cat. Due to this, Jean often exhausts herself trying to complete commissions from the locals, much to the concern of her fellow members.
+                Her devotion to her duties stems from two reasons; her upbringing as a child, and Varka's teachings. Even though he consistently takes his duties lightly, his relaxed and unruly personality has contributed to her growth. She shows no resentment towards his attitude, instead vowing to ensure that the city will be more prosperous and welcoming when he returns. Her work ethic makes her well-liked by both Mondstadt's citizens, her fellow members, and is noted by other organizations. Although she prefers using peaceful methods to solve problems, she will not hesitate to use force if necessary. She has a habit of calling Diluc her senior, even well after he left the Knights. Despite this, she acknowledges that they both share the same vision of protecting Mondstadt.
+            <br>
+            <h1>Appearance</h1>
+            <hr>
+            Jean has a tall, athletic build, and fair skin. She has grey-blue eyes and medium-length gold-blonde hair tied back into a ponytail with a black bow. On her ears, she wears a pair of gold cross earrings.
+            She wears a white, blue, black, and red strapless shirt with a long blue tailcoat attached to it, a pair of separate white sleeves, a short blue and gold cloak attached to a white separate collar. Her white tights are embroidered with gold diamond-dot pattern, and pair of white high-heeled knee-high boots. She also wears a pair of blue gauntlets.
+            </p>
+        </div>
+    </div>
+</div>
+<div id="Kazuha" class="w3-container jenis w3-black w3-animate-bottom" style="display:none">
+    <div class="mydiv">
+        <div class="kazuha"><img src="kazuha.jpg" style="width:100%; margin-top:30px; margin-bottom:30px; padding:30px;"></div>
+        <div class="text">
+            <h1>Personality</h1>
+            <hr>
+            <p>Kazuha is a polite and well-spoken person. Unlike other noble Inazuman clan members, he prefers going out and traveling rather than staying put indoors, something that he is able to do due to the seizure of his clan home. He once roamed Inazuma peacefully as a modest wanderer for a good portion of his life, teaching himself bladework and picking up other skills. Never seeking luxury, he is instead easily pleased just by sleeping on a sun-warmed rock. The time he has spent outdoors makes him attuned to nature and the wind, being able to "hear" and "smell" everything around him with absolute clarity. He can sense dangers, read people and track them down in an instant no matter how well they try to conceal it. Due to this sensitivity he prefers calm weather and never stays in one place for too long, having trouble sleeping for the former[2][3] and having his skills stagnate for the latter.
+            <br>
+            <h1>Appearance</h1>
+            <hr>
+            Kazuha uses the medium male model. He has platinum blonde hair with a single orange-red streak on his right. He has red eyes with a yellow hue at the bottom.
+            </p>
+        </div>
+    </div>
+</div>
+<div id="Sayu" class="w3-container jenis w3-black w3-animate-bottom" style="display:none">
+    <div class="mydiv">
+        <div class="sayu"><img src="sayu.jpg" style="width:100%; margin-top:30px; margin-bottom:30px; padding:30px;"></div>
+        <div class="text">
+            <h1>Personality</h1>
+            <hr>
+            <p>Sayu is a seemingly eternally sleep-deprived ninja who uses her skills to hide from work and responsibilities. Her height is something she's deeply unsatisfied with, believing that sleep can replenish all her energy and help her grow taller.In order to live by this principle and have as much time to nap as possible, she honed her ninjutsu to perfection.
+                While she is particularly renowned for her apparent laziness, the members of the Shuumatsuban know that she is loyal to their cause as she would never go against their principlesand wouldn't slack off on extremely important matters. Ayaka believes that Sayu's laziness came from her sensei's abrupt departure, as she looked up to them and when they left, became lost and confused.
+            <br>
+            <h1>Appearance</h1>
+            <hr>
+            Sayu uses the short female model and is said to be pint-sized. She has short beige hair and reddish eyes.
+            </p>
+        </div>
+    </div>
+</div>
+<div id="Sucrose" class="w3-container jenis w3-black w3-animate-bottom" style="display:none">
+    <div class="mydiv">
+        <div class="sucrose"><img src="sucrose.jpg" style="width:100%; margin-top:30px; margin-bottom:30px; padding:30px;"></div>
+        <div class="text">
+            <h1>Personality</h1>
+            <hr>
+            <p>Sucrose loves experimenting and spends most of her time researching on bio-alchemy, stating that she likes to discover the secrets of life. Her research often yields numerous results that she often labels every unique variable as a result of its own, regardless of how useful said result may be. She spends an immense amount of time researching that she finds herself quickly bored whenever she takes a break.
+                Due to spending most of her time researching and experimenting, Sucrose is a recluse. She has trouble talking with others, as she frequently worries about unintentionally offending them. Lisa remarks that she is hopeless when talking to people, and she herself admits that she is scared of Jean to the point that she often asks Albedo to go on her behalf if she has to discuss something with her.
+            <br>
+            <h1>Appearance</h1>
+            <hr>
+            Sucrose uses the medium female model. She has fair skin, amber eyes, and light green hair that is chin-length except for a section at the back of her head that goes down to her hips. She wears a pair of black round spectacles. Sucrose also has light green animal ears; the animal they correspond to is unknown and the subject of some of Sucrose's investigations.
+            </p>
+        </div>
+    </div>
+</div>
+<div id="Venti" class="w3-container jenis w3-black w3-animate-bottom" style="display:none">
+    <div class="mydiv">
+        <div class="venti"><img src="venti.jpg" style="width:100%; margin-top:30px; margin-bottom:30px; padding:30px;"></div>
+        <div class="text">
+            <h1>Personality</h1>
+            <hr>
+            <p>Venti has a somewhat recalcitrant, carefree, and playful attitude as well as a liking to rhyming in his speech. He sees a particular worth in music to the point where he names his lyre, saying, "every being deserves a name to be called upon, and woven into a song." He is also bold, not fearing to insult or ignore those who are supposedly powerful. In the game, he responds to Paimon's comments and nicknaming by parroting her.
+            <br>
+            <h1>Appearance</h1>
+            <hr>
+            Venti uses the medium male model. He has fair skin, aqua-green eyes, and short black hair with short twin braids at the sides of his face that fade into aqua at the tips. The aqua tips glow Anemo-green when he uses his Elemental Skill or Elemental Burst.His form is modeled after the Nameless Bard, a friend who perished in the rebellion to liberate Decarabian's Mondstadt from Decarabian's rule 2600 years ago. In addition to using this form as an ordinary Mondstadter, he also uses it when appearing as an Archon, as seen in his Statues of The Seven, the Anemo Archon Statue in front of the Favonius Cathedral, and the manga.
+            </p>
+        </div>
+    </div>
+</div>
+<div id="Wanderer" class="w3-container jenis w3-black w3-animate-bottom" style="display:none">
+    <div class="mydiv">
+        <div class="wanderer"><img src="wanderer.jpg" style="width:100%; margin-top:30px; margin-bottom:30px; padding:30px;"></div>
+        <div class="text">
+            <h1>Personality</h1>
+            <hr>
+            <p>After erasing his Fatui ties from Irminsul, the Wanderer is shown to be kind and considerate, although somewhat distracted as he lacked a human heart and name. The lack of a human heart caused him to long for feelings that he could not experience and thus willingly accepted his memories back to reclaim his sins to be himself once more.
+                Following the restoration of his memories, the Wanderer still retained all of his traits as Scaramouche, although he states that he had always acted as such to be both strict on himself and others and that he simply states what he sees in front of him. He is not fond of most of his former co-workers, especially Dottore as a result of his machinations that caused him to become who he was in the first place.
+            <br>
+            <h1>Appearance</h1>
+            <hr>
+            The Wanderer is a young man of short height and slender build with a beautiful face. He has a youthful appearance with dark indigo hair styled into a messy bowl cut and indigo eyes with red eyeliner.
+            The Wanderer's outfit consists of a large circular dark blue hat with golden details with the top part resembling a lotus, with a pair of light blue fabric that dangles from the back of his hat, attached with a pair of diamond-shaped trinkets. Accessories resembling the finials of a shakujo staff hang from these strips of light blue fabric. He sports a tight black high-collared undershirt with long detached sleeves and a golden ornament attached to the center just beneath the collar, over which he wears a loose white tunic with blue tones. He sports a pair of fingerless metallic gloves on each arm consisting of black straps wrapped around his wrists giving it a bandage-like appearance.
+            </p>
+        </div>
+    </div>
+</div>
+<div id="Xiao" class="w3-container jenis w3-black w3-animate-bottom" style="display:none">
+    <div class="mydiv">
+        <div class="xiao"><img src="xiao.jpg" style="width:100%; margin-top:30px; margin-bottom:30px; padding:30px;"></div>
+        <div class="text">
+            <h1>Personality</h1>
+            <hr>
+            <p>Xiao is a yaksha who has fought in the Archon War and holds a high level of seniority among adepti. He has a reserved demeanor and has little intention of getting close to mortals. He does not want sympathy for his past and believes his fellow Yakshas would also find it insulting.[2]
+                He is immensely grateful to Morax for saving him, dedicating his life to protecting Liyue as payment. He does not take lightly to those who speak ill of the Geo Archon regardless of whoever they are.[3] Despite suffering from constant karmic debt, Xiao is highly resilient towards its alluring corruption, as his fellow yaksha have either succumbed or died to it. Due to this debt, he prefers being alone and rarely involves himself in mortal affairs; in the few times he does have to, he asks they get to the point for their own sake.
+            <br>
+            <h1>Appearance</h1>
+            <hr>
+            Xiao uses the medium male model. He has dark medium-length hair with teal undertones, pale skin, golden irises with avian pupils, and red eyeshadow. Xiao also has a purple diamond marking on his forehead and a green tattoo around his right arm.
+            </p>
+        </div>
+    </div>
+</div>
+<div id="Beidou" class="w3-container jenis w3-black w3-animate-zoom" style="display:none">
+    <div class="mydiv">
+        <div class="beidou"><img src="beidou.jpg" style="width:100%; margin-top:30px; margin-bottom:30px; padding:30px;"></div>
+        <div class="text">
+            <h1>Personality</h1>
+            <hr>
+            <p>Beidou is known as the Uncrowned Lord of the Ocean for her great strength — capable of slaying the leviathan Haishan without the aid of a Vision and earning her the respect of the Conqueror of Demons, Xiao[2] — and for leading the Crux, an armed crew she established.
+                Beidou is well known across Liyue for her strength, her easy-going personality, and her good judgment of character. This makes her well-liked by many people, with children even looking up to her as an ideal role model. She treats her crew with respect, who in turn are completely loyal to her. While she does not like the Treasure Hoarders, Beidou honors a "first come, first serve" rule when it comes to collecting treasure[3] unless specified otherwise. Even then, the criminals fear her and try to avoid incurring her wrath, knowing that she severely outmatches them. In turn, she gives opportunities for Treasure Hoarders to leave that lifestyle behind and start over.
+            <br>
+            <h1>Appearance</h1>
+            <hr>
+            Beidou uses the tall female model. She has long, waist-length dark brown hair and fair skin. Her right eye is a deep ruby-colored hue melting into gold. Her left eye is covered by a red eyepatch.
+            </p>
+        </div>
+    </div>
+</div>
+<div id="Cyno" class="w3-container jenis w3-black w3-animate-zoom" style="display:none">
+    <div class="mydiv">
+        <div class="cyno"><img src="cyno.jpg" style="width:100%; margin-top:30px; margin-bottom:30px; padding:30px;"></div>
+        <div class="text">
+            <h1>Personality</h1>
+            <hr>
+            <p>Cyno is a curt, stoic and generally emotionless young man with a ruthlessness and vicious approach to his duty as a matra that make him intimidating and unapproachable. He cares little for niceties or social gatherings and is known throughout Sumeru for his ruthless efficiency at upholding the law.
+                Despite his young age, Cyno holds the position of General Mahamatra in the Akademiya and takes his position seriously. Cyno is extremely dedicated to upholding the Akademiya's rules and punishing any transgressions, to such an extent that even the sages of the Akademiya (ostensibly his superiors) are wary of him. Notoriously, Cyno will relentlessly pursue any individuals that try to flee his judgment, even across the desert — a trait that, in combination with his prowess as a hunter and warrior, makes escaping from Cyno nigh impossible. Due to this, Cyno's name is infamous within Sumeru and many scholars fear the prospect of ever meeting him, despite the fact that he only handles cases of significant interest.
+            <br>
+            <h1>Appearance</h1>
+            <hr>
+            Cyno uses the medium male model. He has tan skin, red-orange eyes, and medium-length grey hair.
+            </p>
+        </div>
+    </div>
+</div>
+<div id="Dori" class="w3-container jenis w3-black w3-animate-zoom" style="display:none">
+    <div class="mydiv">
+        <div class="dori"><img src="dori.jpg" style="width:100%; margin-top:30px; margin-bottom:30px; padding:30px;"></div>
+        <div class="text">
+            <h1>Personality</h1>
+            <hr>
+            <p>Dori is a merchant of high regard in Sumeru, considered the most resourceful merchant who's able to acquire quality goods through her mysterious supply chain (which also includes Alice). She is extremely wealthy and highly obsessed with Mora, seeing everyone and everything as a way to make profit. Her obsession with Mora is due to the fact that her older sister had an illness which her family couldn't afford at the time. She uses her appearance and words to sway customers into buying her goods despite her jaw-dropping prices.
+                Willing to make Mora off just about anything, Dori also partakes in the black market, which has also caught the Matras' attention. Due to this, she implemented some protocols to vet all potential customers to prevent her, her employees and potential customers from being held liable.
+            <br>
+            <h1>Appearance</h1>
+            <hr>
+            Dori uses the short female model. She has fair skin, golden brown eyes, and short pink hair. She also wears a pair of small glasses with reddish lenses and gold diamond-shaped frames.
+            </p>
+        </div>
+    </div>
+</div>
+<div id="Fischl" class="w3-container jenis w3-black w3-animate-zoom" style="display:none">
+    <div class="mydiv">
+        <div class="fischl"><img src="fischl.jpg" style="width:100%; margin-top:30px; margin-bottom:30px; padding:30px;"></div>
+        <div class="text">
+            <h1>Personality</h1>
+            <hr>
+            <p>Due to her upbringing as a child, Fischl is obsessed with fantasy stories and roleplays as a benevolent princess. She speaks in a polite and formal manner to all, which greatly confuses those who interact with her. For this purpose, Oz ends up translating most of her speech if they are confused. She is so used to speaking this way that breaking character ends up confusing the people she talks to just as much as staying in character. Fischl has a knack for investigating in part due to her own theories and Oz, which has allowed her to quickly climb up the ranks of the Adventurers' Guild. Even when her ideas sound outlandish, such as claiming a meteor shower to be the result of a curse, Oz is quick to ask others not to underestimate her intuition, as her instincts are very keen.
+            <br>
+            <h1>Appearance</h1>
+            <hr>
+            Fischl has blonde hair, light green eyes, and a petite build with fair skin. Two sections of her hair are tied into twin tails with a black ribbon, the left of which is decorated with a bat wing pattern. Fischl wears a black eyepatch that is worn to not obstruct her view when possessing Oz.
+            </p>
+        </div>
+    </div>
+</div>
+<div id="Keqing" class="w3-container jenis w3-black w3-animate-zoom" style="display:none">
+    <div class="mydiv">
+        <div class="keqing"><img src="keqing.jpg" style="width:100%; margin-top:30px; margin-bottom:30px; padding:30px;"></div>
+        <div class="text">
+            <h1>Personality</h1>
+            <hr>
+            <p>The Yuheng of the Liyue Qixing, Keqing. She is a workaholic and is subject to pressure even at her young age. One might attribute her to perfectionism when pertaining to work, causing many of their employees to resign but in reality, she has a strong sense of responsibility and tenaciousness inherited from her grandfather. Keqing, unlike most of Liyue, is a great skeptic. She believes that humans should deal with their own problems but it all changed when the Lord of Geo retired from his duties, passing it on to the Qixing. She gained a new respect towards Rex Lapis himself, realizing the magnitude of his work to govern Liyue. As part of her so-called "self-reflection", which in reality is a way to hide the newfound respect she has for Rex Lapis, she keeps memorabilia of Rex Lapis. She was also a skeptic of Visions, viewing it as both challenge and insult and once tried to destroy it, all of her attempts failing. She'd then realized the various uses of her Vision and learned to appreciate them.
+            <br>
+            <h1>Appearance</h1>
+            <hr>
+            Keqing has fair skin and dark amethyst eyes, with oval cat-like pupils featuring diamond-shaped markings on the iris. Her light purple hair is tied into waist-length twin-tails, topped by small odango-style buns resembling cat ears. There is also a small braid running along the side of her bangs.
+            </p>
+        </div>
+    </div>
+</div>
+<div id="Kuki" class="w3-container jenis w3-black w3-animate-zoom" style="display:none">
+    <div class="mydiv">
+        <div class="kuki"><img src="shinobu.jpg" style="width:100%; margin-top:30px; margin-bottom:30px; padding:30px;"></div>
+        <div class="text">
+            <h1>Personality</h1>
+            <hr>
+            <p>Unlike the rest of her family who work as shrine maidens, Shinobu prefers to forge her own path, having tried various trades, studying in Liyue and even joining the Arataki Gang, simply because they allow her to live how she wants — outside and enjoying various experiences, rather than being shackled to the same duties repeatedly. She's a stark contrast to the rest of her group, taking matters seriously and in a generally professional matter. She handles the gang's legal issues and gets them out of trouble and tries her best to compensate for any damages that Itto might have caused with his antics. Her professionalism is noted by the people of Hanamizaka, who go to her for advice on various matters and are left impressed as their discussions with her go smoothly and efficiently. While the gang is not on good terms with the Tenryou Commission, she gets along well with Kujou Sara, even giving up her Vision to her for the sake of their friendship.
+            <br>
+            <h1>Appearance</h1>
+            <hr>
+            Shinobu uses the medium female model. She has light green hair, pale skin, and narrow reddish-violet eyes. She also has reddish-purple markings on her skin at the sides of her waist.
+            </p>
+        </div>
+    </div>
+</div>
+<div id="Lisa" class="w3-container jenis w3-black w3-animate-zoom" style="display:none">
+    <div class="mydiv">
+        <div class="lisa"><img src="lisa.jpg" style="width:100%; margin-top:30px; margin-bottom:30px; padding:30px;"></div>
+        <div class="text">
+            <h1>Personality</h1>
+            <hr>
+            <p>Lisa is a proficient witch; as such, she enjoys everything related to the elements and items that would help her understand them. Despite her position as Librarian, Lisa takes it somewhat haphazardly as she appears to be relatively bored dealing with normal books, instead preferring those in the restricted section. She still takes the job seriously nonetheless, and will personally go out to collect books that are long overdue, albeit in a way that she can still enjoy the smaller things in life.
+            <br>
+            <h1>Appearance</h1>
+            <hr>
+            Lisa has fair skin, green eyes, and wavy, light honey-brown hair, which is tied in a loose side ponytail.
+            She wears a purple and white dress with open slits at the sides and gold embroidery, along with black gloves with pale purple trim, a large witch's hat, black lace stockings, and black high heels, and an earring is visible on one ear. She wears a gold necklace with her Vision clasped to the collar of her dress.
+            </p>
+        </div>
+    </div>
+</div>
+<div id="Ei" class="w3-container jenis w3-black w3-animate-zoom" style="display:none">
+    <div class="mydiv">
+        <div class="ei"><img src="ei.jpg" style="width:100%; margin-top:30px; margin-bottom:30px; padding:30px;"></div>
+        <div class="text">
+            <h1>Personality</h1>
+            <hr>
+            <p>The Raiden Shogun is a firm believer of what she believes to be eternity — a place in which everything is kept the same, regardless of what goes on. She is honorable in her conduct and is revered by the people of Inazuma.
+            The Raiden Shogun exists in two forms — Ei, her true identity, and the Shogun, a puppet created by Ei to oversee Inazuma in her stead while she meditates in the Plane of Euthymia. This puppet follows a set of directives programmed into her, which are extremely difficult to modify. The Shogun is cold and stern in personality, even callous at times; she is limited in emotional expression, has no likes and dislikes, and has no need for recreation.The Shogun thinks of herself as Ei's assistant and carries out her creator's exact will, unable to act on her own volition. If her usual functions are disabled, the Shogun becomes ineffectual. Due to limited protocols as a result of Ei's initial indifference towards anything other than "eternity", the puppet is able to be manipulated by external influences. For example, the Kujou Clan and Fatui persuaded her into initiating and maintaining the Vision Hunt Decree.
+            <br>
+            <h1>Appearance</h1>
+            <hr>
+            The Raiden Shogun uses the tall female model. She has pale skin, purple eyes with light blue pupils, and long, dark violet hair that becomes lighter at the ends, which glow when she uses her Elemental Skill or her Elemental Burst. She also has a beauty mark below her right eye.
+            </p>
+        </div>
+    </div>
+</div>
+<div id="Razor" class="w3-container jenis w3-black w3-animate-zoom" style="display:none">
+    <div class="mydiv">
+        <div class="razor"><img src="razor.jpg" style="width:100%; margin-top:30px; margin-bottom:30px; padding:30px;"></div>
+        <div class="text">
+            <h1>Personality</h1>
+            <hr>
+            <p>Razor is a generally good-natured person who considers his wolf pack his family, and becomes enraged if they are hurt by other parties. He loves his wolf family, but dislikes the fact that he isn't fully like them, being an infant taken in by the leader of his pack, Andrius. While he barely sees any fellow humans traveling in Wolvendom due to its fearsome reputation, he considers the few humans he does encounter to be his friends and is willing to protect them from danger if it means sacrificing his and his pack's dinner for the night. Razor is also a quick thinker, as he is able to fix Klee's disasters whenever she goes to play in Wolvendom.
+            <br>
+            <h1>Appearance</h1>
+            <hr>
+            Razor uses the medium male model. He has long, spiky grey hair; bright red eyes; and pale skin. He has several scars on his body, including one on his left cheek and several on his arms, likely as a result of his time living in the wild with his wolf family.
+            </p>
+        </div>
+    </div>
+</div>
+<div id="Sara" class="w3-container jenis w3-black w3-animate-zoom" style="display:none">
+    <div class="mydiv">
+        <div class="sara"><img src="sara.jpg" style="width:100%; margin-top:30px; margin-bottom:30px; padding:30px;"></div>
+        <div class="text">
+            <h1>Personality</h1>
+            <hr>
+            <p>Despite being an adopted member of the Kujou Clan, she is immensely loyal to the Shogun's rule and tirelessly works to create the eternity that the Shogun desires, even if she does not live to see it herself. Those who speak to her note that she has a ruthless, yet efficient and stern attitude, fitting for her position in the Tenryou Commission. Her devotion to the Shogun's cause and her honorable conduct has gained her the respect of those under her command. She prefers doing everything herself when possible; compared to other Tenryou generals, she participates in battle alongside her men (and head-on attacks as a result) rather than remaining at the back. She despises dishonorable conduct and those who betray the Shogun's will.
+            <br>
+            <h1>Appearance</h1>
+            <hr>
+            Kujou Sara uses the tall female model. She has indigo hair cut into an uneven bob, pale skin, and golden eyes. As a tengu, she has two pairs of black raven-like wings that can unfurl from her back; these are seen in one of her idle animations and when she unleashes Subjugation: Koukou Sendou, her Elemental Burst. Additionally, on the side of her head lies a red tengu mask that resembles a crow's face with white accents, a black crest, and a hexagonal piece resembling a tokin.
+            </p>
+        </div>
+    </div>
+</div>
+<div id="Yae" class="w3-container jenis w3-black w3-animate-zoom" style="display:none">
+    <div class="mydiv">
+        <div class="yae"><img src="yae.jpg" style="width:100%; margin-top:30px; margin-bottom:30px; padding:30px;"></div>
+        <div class="text">
+            <h1>Personality</h1>
+            <hr>
+            <p>Miko has a mysterious demeanor around her whenever she assumes her duties as the Guuji of the Grand Narukami Shrine. When she assumes her duties as the boss of the Yae Publishing House, she is known to be very kind and enjoys reading books and stories, although she also shows an obsessive side in making profits at the same time. She has an enigmatic air around her, with her friends growing used to it. When speaking with outsiders or close friends, she shows a blunter and more cynical side to her. Miko does not mince words, even towards her friend and master Ei. Being a kitsune, Miko is fond of fried tofu. She despises pickled foods of all sorts.
+            <br>
+            <h1>Appearance</h1>
+            <hr>
+            In her regular form, Miko has purple eyes and long, muted pink hair that is tied at the bottom. She also has fox ears, while notably lacking a tail in this form,they briefly appear as a set of five translucent tails when she uses Great Secret Art: Tenko Kenshin, or one when she uses Yakan Evocation: Sesshou Sakura or when performing a Plunging Attack. Miko wears a unique and stylized variation of clothing inspired by the colors of a shrine priestess' traditional outfit. She wears a golden head accessory accompanied by matching golden earrings. The right earring contains an Electro Inazuman Vision wrapped in a complex drop-shaped piece and decorated by a small fan-shaped accessory at the bottom. The earrings are attached to her ears by diamond-shaped studs.
+            </p>
+        </div>
+    </div>
+</div>
+<div id="Albedo" class="w3-container jenis w3-black w3-animate-fading" style="display:none">
+    <div class="mydiv">
+        <div class="albedo"><img src="albedo.jpg" style="width:100%; margin-top:30px; margin-bottom:30px; padding:30px;"></div>
+        <div class="text">
+            <h1>Personality</h1>
+            <hr>
+            <p>Having gained fame for his alchemical talents, Albedo is a reclusive person, spending most of his time in Dragonspine. He isn't fond of most social interactions and thus rarely travels to the city of Mondstadt unless it is to meet up with his fellow alchemists or other acquaintances. Yet he's also shown to at least be fascinated or interested in them in some way, often willingly appearing in events that have some sort of social setting going on and helping out the people around him in any way he can. While he does seem to enjoy company and seeing how people interact in a social setting, he finds relationships stressful and tiresome because of the amount of effort needed to maintain them. This doesn't mean he dislikes the relationships he has with others, he simply struggles with them and can get tired out from trying to keep track of everything to keep the relationship from falling apart. He prefers being around children, especially Klee, seeing her as a younger sister. Klee in turn sees him as an older brother figure.
+            <br>
+            <h1>Appearance</h1>
+            <hr>
+            Albedo uses the medium male model. He has bright teal eyes with three dots in each iris, pale skin, and pale blond hair reaching below his shoulders. Due to being a synthetic human, a gold diamond marking can be found on his neck.
+            </p>
+        </div>
+    </div>
+</div>
+<div id="Gorou" class="w3-container jenis w3-black w3-animate-fading" style="display:none">
+    <div class="mydiv">
+        <div class="gorou"><img src="gorou.jpg" style="width:100%; margin-top:30px; margin-bottom:30px; padding:30px;"></div>
+        <div class="text">
+            <h1>Personality</h1>
+            <hr>
+            <p>Gorou, like all of Watatsumi Island's inhabitants, is a loyal supporter of Sangonomiya Kokomi. Kokomi trusts him to lead the Watatsumi Army as its primary general, being sincere, determined and courageous. He has a strong sense of camaraderie and gets along well with all of the soldiers under his command, who in turn share the same sentiment and speak to him if any issues arise, including new recruits. Kazuha describes Gorou as a person who says what is on his mind, uninhibited by others' feelings. In the heat of battle, Kokomi remarks that Gorou tends to have a habit of letting the adrenaline rush to his head, often requiring someone to keep him in check when he heads to the battlefield. While he considers himself to be mostly inexperienced due to his age, he tries his best to help out with any problems that may arise. He is comfortable speaking with others apart from Yae Miko, as the kitsune frequently talks in a manner that he finds himself completely flustered to the point that he instinctively hides from her if given the chance.
+            <br>
+            <h1>Appearance</h1>
+            <hr>
+            Gorou uses the medium male model. He has fair skin, light orange-brown hair with a white section, and teal blue eyes. He has erect pointy ears that are white inside and a bushy tail with a white underside.
+            </p>
+        </div>
+    </div>
+</div>
+<div id="Itto" class="w3-container jenis w3-black w3-animate-fading" style="display:none">
+    <div class="mydiv">
+        <div class="itto"><img src="itto.jpg" style="width:100%; margin-top:30px; margin-bottom:30px; padding:30px;"></div>
+        <div class="text">
+            <h1>Personality</h1>
+            <hr>
+            <p>Despite appearing as "mean and overbearing", Itto is a kind soul at heart, apart from trying to pick a fight with Kujou Sara at every possible opportunity. He is not particularly intelligent, but can put in the effort when asked of him. He is respected by his gang and mostly liked by Inazuma City's people, especially children, but is at odds with the Tenryou Commission despite his mostly harmless antics and pranks.
+                Itto takes pride in his oni heritage and does not like those who discriminate his kind. He appreciates the sacrifice made by his blue oni brethren for ensuring that oni could be accepted into human society in the present day, even wanting to share the results with them as thanks for their efforts. He always remembers the age-old pact between the oni tribes and never uses his strength for malicious purposes, refusing to terrorize humans and steal rewards that he hadn't claimed legitimately. Due to this pride, he is extremely competitive,[2] although he knows when to concede.
+            <br>
+            <h1>Appearance</h1>
+            <hr>
+            Itto uses the tall male model. He has white spiked hair with pale red streaks that goes down to his back. As an oni, he has two red horns on his forehead. Itto also has eyes that fade from red to yellow and diamond-shaped pupils. His face is painted with red makeup which extends from his upper eyelid to this lower eyelid, and numerous parts of his body, arms and head are also painted with red lines.
+            </p>
+        </div>
+    </div>
+</div>
+<div id="Ningguang" class="w3-container jenis w3-black w3-animate-fading" style="display:none">
+    <div class="mydiv">
+        <div class="ningguang"><img src="ningguang.jpg" style="width:100%; margin-top:30px; margin-bottom:30px; padding:30px;"></div>
+        <div class="text">
+            <h1>Personality</h1>
+            <hr>
+            <p>Ningguang is a professional businesswoman, having accumulated her wealth through hard work and perseverance. As the Tianquan, she is known for being highly meticulous in her work and holds a large amount of influence within Liyue.
+                She is a calculating and ruthless businesswoman guided by the sole aim of making Mora," which stems from her impoverished background. She makes use of a large intelligence network and "pawns" to gain the information she needs, and will only make use of people whose weaknesses she knows."As a result, she is disliked by those with significant influence, but nonetheless, many accept it as she adds to the overall prosperity of both the Qixing and Liyue Harbor itself.
+            <br>
+            <h1>Appearance</h1>
+            <hr>
+            Ningguang is a tall woman with fair skin, red eyes and an overall elegant appearance. She has long straight hair, where half of it is tied up into a wide bun resembling a bow, and the rest falls into two divided parts. Her hair is white, reaches her knees and fades into an ashy color. Her bun is accessorized with a black hairpin, and she wears a red tassel decoration atop her head which lays between her eyes.
+            </p>
+        </div>
+    </div>
+</div>
+<div id="Noelle" class="w3-container jenis w3-black w3-animate-fading" style="display:none">
+    <div class="mydiv">
+        <div class="noelle"><img src="noelle.jpg" style="width:100%; margin-top:30px; margin-bottom:30px; padding:30px;"></div>
+        <div class="text">
+            <h1>Personality</h1>
+            <hr>
+            <p>Noelle is a polite young woman and professional maid, helping those in need without hesitation, regardless of how far they are or what they need done, as long as they say her name. She has a very high standard of work ethic, as she always strives to ensure that everyones' needs are satisfied and always makes the effort to go over their expectations. No work is a problem for her; Lisa believes that the more work she is given, the happier she is.
+            <br>
+            <h1>Appearance</h1>
+            <hr>
+            Noelle uses the medium female model. She has short, neck-length pale gray hair with a straight fringe and lopsided locks of hair framing her face. A section of hair is braided over her bangs and pinned down at the right side of her face with a gold shield clip. Her eyes are olive green.
+            </p>
+        </div>
+    </div>
+</div>
+<div id="Yun Jin" class="w3-container jenis w3-black w3-animate-fading" style="display:none">
+    <div class="mydiv">
+        <div class="yun jin"><img src="yunjin.jpg" style="width:100%; margin-top:30px; margin-bottom:30px; padding:30px;"></div>
+        <div class="text">
+            <h1>Personality</h1>
+            <hr>
+            <p>Yun Jin is a skilled director, playwright and singer who is well renowned throughout Liyue for her plays, enjoying this passion and going to many lengths to ensure that everyone who watches her performances leaves satisfied. While appearing to be refined and graceful in formal occasions, she is also known to be exceptionally friendly in private. She draws inspiration from many sources for her plays; she enjoys a wide variety of special drinks as one of her pastimes and she can write a play about one if she enjoys it.
+            <br>
+            <h1>Appearance</h1>
+            <hr>
+            Yun Jin uses the medium female model. She has a fair complexion, rich red eyes with prominent red makeup painted at the corners, and hip-length jet black hair with purple highlights styled in a hime cut.
+            </p>
+        </div>
+    </div>
+</div>
+<div id="Zhongli" class="w3-container jenis w3-black w3-animate-fading" style="display:none">
+    <div class="mydiv">
+        <div class="zhongli"><img src="zhongli.jpg" style="width:100%; margin-top:30px; margin-bottom:30px; padding:30px;"></div>
+        <div class="text">
+            <h1>Personality</h1>
+            <hr>
+            <p>Zhongli is a calm, reserved, and polite man, who holds an air of nostalgia. He knows much about Liyue history and culture in part due to his time as the Geo Archon; like Venti, he has many experiences and memories, as he was a god well before The Seven even existed and one of the oldest still living in Teyvat. He holds philosophical ideas towards money and has great respect for Liyue's traditions, including those that have been forgotten or warped over time. Zhongli tends to be humble, being worried he comes off as a "bourgeois parasite."
+            <br>
+            <h1>Appearance</h1>
+            <hr>
+            Zhongli uses the tall male model. He has fair skin, amber eyes with yellow diamond-shaped pupils and red eyeliner on the lower lids of his eyes, and mostly short dark brown hair with a longer fringe on the right side of his face and Geo-amber tips that glow when he uses his Elemental Skill or Elemental Burst. There is one section of his hair on the back of his head that is waist-length instead of being cut short.
+            </p>
+        </div>
+    </div>
+</div>
+<div id="Ayato" class="w3-container jenis w3-black w3-animate-left" style="display:none">
+    <div class="mydiv">
+        <div class="ayato"><img src="ayato.jpg" style="width:100%; margin-top:30px; margin-bottom:30px; padding:30px;"></div>
+        <div class="text">
+            <h1>Personality</h1>
+            <hr>
+            <p>Ayato is a person that does not like to show his face in public often, preferring to work on his duties as the Yashiro Commissioner. A well-known fact about him is that he's extremely busy and stressed, as he has to deal with corrupt government officials while juggling his duty as the leader of the Shuumatsuban. Due to his duties, he loathes small talk, wanting people to get to the point. He uses a large array of methods to deal with corrupt officials, usually within legal bounds.
+                While he is not particularly well known due to his preference to remain behind the scenes, those who are familiar with him note that he is incredibly kind and has inspired loyalty from many people. For example, Hirotatsu states that he continues to serve the Yashiro Commission to repay the generosity that he showed him and his master and it is strongly implied that Ayato was the one who inspired Thoma to the point the latter received a Vision. Ayato has stated that he highly values loyalty and obedience (hence his preference for dogs), as strongly implied that there were numerous assassinations against him in the past, hence why he values those two traits so much to protect himself from rival clans and organizations.
+            <br>
+            <h1>Appearance</h1>
+            <hr>
+            Ayato uses the tall male model. He has long pale blue asymmetrical shoulder-length hair, pale skin, and light purple eyes. He also has a small mole under the left corner of his mouth.
+            </p>
+        </div>
+    </div>
+</div>
+<div id="Barbara" class="w3-container jenis w3-black w3-animate-left" style="display:none">
+    <div class="mydiv">
+        <div class="barbara"><img src="barbara.jpg" style="width:100%; margin-top:30px; margin-bottom:30px; padding:30px;"></div>
+        <div class="text">
+            <h1>Personality</h1>
+            <hr>
+            <p>The Deaconess of the Church of Favonius, Barbara. She's hardworking, bright, charismatic, and optimistic, yet may be clumsy sometimes. The sight of the Idol of Mondstadt makes everyone have something of a "second wind" and become motivated.
+                Even after being a successful figure in Mondstadt, she feels doubt and feels disillusioned whenever thinking of the duration of one's smile on other's faces after hearing her song. Her desire for fame and recognition changed into the desire to help others in times of need. Though depressed, she cheers herself back up, not letting herself be down or depressed for 30 seconds.
+            <br>
+            <h1>Appearance</h1>
+            <hr>Barbara uses the medium female model. She has ash blonde hair, blue eyes, and fair skin.
+            </p>
+        </div>
+    </div>
+</div>
+<div id="Candace" class="w3-container jenis w3-black w3-animate-left" style="display:none">
+    <div class="mydiv">
+        <div class="candace"><img src="candace.jpg" style="width:100%; margin-top:30px; margin-bottom:30px; padding:30px;"></div>
+        <div class="text">
+            <h1>Personality</h1>
+            <hr>
+            <p>Candace is a young woman who serves as Aaru Village's guardian. She protects the inhabitants from the dangers of the Great Red Sand, such as bandits and natural dangers. She treats all visitors to the village with utmost respect regardless of wherever they come from as long as they abide by the village's rules. However, should they endanger the village or its inhabitants, Candace is shown to be extremely ruthless and terrifying.
+            <br>
+            <h1>Appearance</h1>
+            <hr>Candace uses the tall female model. She has tan skin and dark blue hair. Her eyes exhibit a form of heterochromia iridum: Her right eye is dark blue and her left eye is golden yellow.
+            </p>
+        </div>
+    </div>
+</div>
+<div id="Childe" class="w3-container jenis w3-black w3-animate-left" style="display:none">
+    <div class="mydiv">
+        <div class="childe"><img src="childe.jpg" style="width:100%; margin-top:30px; margin-bottom:30px; padding:30px;"></div>
+        <div class="text">
+            <h1>Personality</h1>
+            <hr>
+            <p>Tartaglia describes himself as "kind of a bad guy", living for the thrill of a fight and causing chaos. As a child, Tartaglia was frightened and hesitant, but he secretly desired to become an adventurer like the ones his father told him about as they fished together. After falling into The Abyss and meeting and training with Skirk, Tartaglia's personality drastically changed. Although he appears to relatively friendly on the surface, Tartaglia is a bloodthirsty warrior. The Abyss and his old master, Skirk, made him self-confident, solipsistic, and brash, thriving on the sensation of being alive. A warrior at heart, he constantly seeks ways to grow stronger, regardless of how he obtains said power. Tartaglia considers those who wish to become strong like him to be friends and takes pleasure in battling them on the battlefield. He lusts for combat and grows excited by fighting strong opponents, even if it could mean dying in the process. He uses bows because he is weakest with them, making his victories with them all the more exhilarating.
+            <br>
+            <h1>Appearance</h1>
+            <hr>Tartaglia uses the tall male model. He has short ginger hair and dull blue eyes. He wears a red Fatui mask pulled off to the left side of his head, and a beaded earring with a red crystal on his left ear. A few lighter blonde streaks can be seen in his hair, with one prominent one on the left side of his bangs.
+            </p>
+        </div>
+    </div>
+</div>
+<div id="Kokomi" class="w3-container jenis w3-black w3-animate-left" style="display:none">
+    <div class="mydiv">
+        <div class="kokomi"><img src="kokomi.jpg" style="width:100%; margin-top:30px; margin-bottom:30px; padding:30px;"></div>
+        <div class="text">
+            <h1>Personality</h1>
+            <hr>
+            <p>As the Divine Priestess of Watatsumi Island, Kokomi handles almost all of the affairs on the island herself. While she is not content with such a burden, having preferred to be a military advisor, she nonetheless takes the mantle to give her people the hope and happiness they deserve. Like Jean, Kokomi easily burns herself out completing her tasks and tries to keep it hidden from others to avoid worrying them. Along with handling all sorts of affairs, Kokomi is a skilled strategist that thinks of all potential scenarios and how to handle them as a result of reading plenty of military books, although she also enjoys casual reading. Kujou Sara remarks that her planning prevented the Tenryou Commission from claiming full victory over the Watatsumi Army. She continues this habit even outside of military affairs. As a result of the role she plays, she is universally beloved by her people.
+            <br>
+            <h1>Appearance</h1>
+            <hr>Kokomi uses the medium female model. She has long, pale salmon pink hair and light indigo eyes with no pupil and a large white highlight at the top of her iris.
+            </p>
+        </div>
+    </div>
+</div>
+<div id="Mona" class="w3-container jenis w3-black w3-animate-left" style="display:none">
+    <div class="mydiv">
+        <div class="mona"><img src="mona.jpg" style="width:100%; margin-top:30px; margin-bottom:30px; padding:30px;"></div>
+        <div class="text">
+            <h1>Personality</h1>
+            <hr>
+            <p>Mona is an astrologist who takes her passion seriously. She is very knowledgeable in this subject in part and respects, yet also fears her master at the same time. She combines her astrology skills with hydromancy, which makes her a well-known, if still growing astrologist. In part due to her astrology, Mona can tell whether or not a person is lying, can sense their intentions from a single glance, being capable of seeing their fate and is able to accurately deduce a person's traits just from knowing what their constellation is.
+            <br>
+            <h1>Appearance</h1>
+            <hr>Mona is a young woman with fair skin. She has pale, sea green eyes. She has long dark purple hair with an uneven fringe tied up with black ribbons into two twintails, two gold compass rose ornaments clamped onto the tips. Her accessories consist of a gold earring designed to resemble a compass rose on her left ear, and a black choker necklace adorned with another gold compass rose.
+            </p>
+        </div>
+    </div>
+</div>
+<div id="Nilou" class="w3-container jenis w3-black w3-animate-left" style="display:none">
+    <div class="mydiv">
+        <div class="nilou"><img src="nilou.jpg" style="width:100%; margin-top:30px; margin-bottom:30px; padding:30px;"></div>
+        <div class="text">
+            <h1>Personality</h1>
+            <hr>
+            <p>Nilou is extremely polite to just about everyone she meets, especially when she's off-stage. She is highly skilled in dancing, being the main star of the Zubayr Theater. She is patient and helpful, guiding people through issues they have step-by-step and offering ways to relieve stress.
+                She enjoys sweets, seeing them as a way to make people happy. On the other hand, she despises mushrooms; she has trauma after eating a poisonous mushroom and is unable to discern the differences between poisonous and non-poisonous mushrooms.
+            <br>
+            <h1>Appearance</h1>
+            <hr>Nilou uses the medium female model. She has fair skin, bright red hair that is shoulder-length in front and goes past her hips at the back, and light aqua eyes.
+            </p>
+        </div>
+    </div>
+</div>
+<div id="Xingqiu" class="w3-container jenis w3-black w3-animate-left" style="display:none">
+    <div class="mydiv">
+        <div class="xingqiu"><img src="xingqiu.jpg" style="width:100%; margin-top:30px; margin-bottom:30px; padding:30px;"></div>
+        <div class="text">
+            <h1>Personality</h1>
+            <hr>
+            <p>To most people, Xingqiu appears to be a polite young man who takes his studies seriously, but he also has a more mischievous side to him. In the presence of close friends and family, he is gregarious and chatty, but shows more restraint than his elder brother. Unlike his older sibling, who is completely devoted to the guild's success, Xingqiu is more reluctant to do so, putting him at odds with his family.
+                He is good friends with Hu Tao and Chongyun, though he pranks the latter consistently. He is an avid reader and spends most of his time looking for rare books at Wanwen Bookhouse when he is not preoccupied with his duties, writing his own books from time to time, with "A Legend of Sword" being one of his books. While it did not garner the popularity he wished for in Liyue, he is unexpectedly popular in Inazuma and Fontaine after an Inazuman merchant took the book back home with them; however, Xingqiu was initially unaware of its popularity in Inazuma.
+            <br>
+            <h1>Appearance</h1>
+            <hr>Xingqiu uses the medium male model. He has golden-amber eyes, a light skin tone, and dark navy blue hair with asymmetrical bangs.
+            </p>
+        </div>
+    </div>
+</div>
+<div id="Yelan" class="w3-container jenis w3-black w3-animate-left" style="display:none">
+    <div class="mydiv">
+        <div class="yelan"><img src="yelan.jpg" style="width:100%; margin-top:30px; margin-bottom:30px; padding:30px;"></div>
+        <div class="text">
+            <h1>Personality</h1>
+            <hr>
+            <p>Yelan is said to be quite secretive and mysterious; while claiming to work for the Ministry of Civil Affairs, she's frequently absent from work most of the year. Despite this, Ningguang tolerates her general absence while Keqing appreciates her work, although the latter wonders as to where she gets her intelligence from. She employs psychological tactics to catch her targets and get all the information she needs from them.
+                Outside of work, Yelan approaches life at a calm and carefree pace. She frequently enjoys napping whenever possible, but will adjust her schedule as needed for the day's tasks. When handling particularly troublesome cases, she tries to save up her energy to complete everything in a single go.
+            <br>
+            <h1>Appearance</h1>
+            <hr>Yelan uses the tall female model. She has pale skin, light emerald-green eyes, and dark blue hair and asymmetrical bangs that are lighter at the tips.
+            </p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
